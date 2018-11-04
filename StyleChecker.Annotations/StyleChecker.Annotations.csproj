@@ -6,21 +6,37 @@
 
   <PropertyGroup>
     <PackageId>StyleChecker.Annotations</PackageId>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <PackageVersion>1.0.1.0</PackageVersion>
     <Authors>Tomohisa Tanaka</Authors>
     <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageProjectUrl>https://maroontress.github.io/StyleChecker.Annotations/</PackageProjectUrl>
+    <PackageProjectUrl>https://maroontress.github.io/StyleChecker-Annotations/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/maroontress/StyleChecker.Annotations</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>Annotations used with StyleChecker.</Description>
-    <PackageReleaseNotes>See https://maroontress.github.io/StyleChecker.Annotations/releasenotes.html</PackageReleaseNotes>
+    <PackageReleaseNotes>See https://maroontress.github.io/StyleChecker-Annotations/releasenotes.html</PackageReleaseNotes>
     <Copyright>Copyright (c) 2018 Maroontress Fast Software</Copyright>
     <PackageTags>StyleChecker, analyzers</PackageTags>
     <NoPackageAnalysis>true</NoPackageAnalysis>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1.0</Version>
     <RepositoryType />
     <Company>Maroontress Fast Software</Company>
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>StyleChecker.Annotations.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>StyleChecker.Annotations.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>StyleChecker.Annotations.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleChecker" Version="1.0.14" PrivateAssets="all" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.1-beta.61" PrivateAssets="all">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>
