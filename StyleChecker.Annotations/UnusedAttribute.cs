@@ -2,10 +2,8 @@ namespace StyleChecker.Annotations
 {
     using System;
 
-    /// <summary>
-    /// The annotation for the UnusedVariable analyzer of StyleChecker,
-    /// which marks a parameter as a unused.
-    /// </summary>
+    /// <include file='docs.xml'
+    /// path='docs/members[@name="Unused"]/UnusedAttribute/*'/>
     [AttributeUsage(
         AttributeTargets.Parameter,
         Inherited = false,
