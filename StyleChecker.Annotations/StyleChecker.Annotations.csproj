@@ -33,7 +33,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="StyleChecker" Version="1.0.14" PrivateAssets="all" />
+    <PackageReference Include="StyleChecker" Version="1.0.18" PrivateAssets="all" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.1-beta.61" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
