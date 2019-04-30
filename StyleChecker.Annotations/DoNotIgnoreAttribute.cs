@@ -1,4 +1,4 @@
-﻿namespace StyleChecker.Annotations
+namespace StyleChecker.Annotations
 {
     using System;
 
